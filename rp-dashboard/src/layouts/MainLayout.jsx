@@ -18,6 +18,7 @@ import DebugPanel from '../components/DebugPanel';
 
 // Drawer width
 const drawerWidth = 240;
+const logoPath = '/lilypad-logo.svg'; // Path to the logo in the public folder
 
 const MainLayout = ({ children }) => {
   const [open, setOpen] = useState(true);
@@ -73,6 +74,7 @@ const MainLayout = ({ children }) => {
           >
             <MenuIcon />
           </IconButton>
+          <img src={logoPath} alt="Lilypad Logo" style={{ height: '40px', marginRight: '16px' }} />
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
             Lilypad Resource Provider Dashboard
           </Typography>

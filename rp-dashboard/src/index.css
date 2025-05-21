@@ -1,9 +1,9 @@
 :root {
-  font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif; */ /* Commented out to allow Lilypad styles to take precedence */
+  line-height: 1.5; /* This might be overridden by Lilypad styles, but is a safe default */
+  font-weight: 400; /* This might be overridden by Lilypad styles, but is a safe default */
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */ /* Removed to enforce Lilypad's theme (likely dark) */
   
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -34,14 +34,16 @@ body {
 a {
   font-weight: 500;
   text-decoration: inherit;
-  color: inherit;
+  color: inherit; /* Keep color inherit for a tags by default */
 }
 
 /* Transitions for theme changes */
-.theme-transition {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
+/* .theme-transition { */ /* Commenting out, assuming Lilypad styles handle transitions or they are not needed initially */
+  /* transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; */
+/* } */
 
+/* Default <a> styling commented out, Lilypad styles should handle this */
+/*
 a {
   font-weight: 500;
   color: #646cff;
@@ -50,20 +52,26 @@ a {
 a:hover {
   color: #535bf2;
 }
+*/
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+/* body { */
+  /* margin: 0; */ /* Covered by * reset */
+  /* display: flex; */ /* Removed, likely from default Vite template */
+  /* place-items: center; */ /* Removed, likely from default Vite template */
+  /* min-width: 320px; */ /* Already set */
+  /* min-height: 100vh; */ /* Already set */
+/* } */
 
+/* Default h1 styling commented out, Lilypad styles should handle this */
+/*
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+*/
 
+/* Default button styling commented out, Lilypad styles or MUI overrides should handle this */
+/*
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -82,7 +90,10 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+*/
 
+/* Removed light theme preferences to enforce Lilypad's theme (likely dark) */
+/*
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -95,3 +106,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/

@@ -8,38 +8,38 @@ html, body {
 }
 
 body {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  /* font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif; */ /* Commented: Let Lilypad styles/index.css define this */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
+  line-height: 1.5; /* Safe default, may be overridden */
 }
 
-.app-container {
-  display: flex;
-  height: 100vh;
-}
+/* .app-container { */ /* Commented: Let MUI Box and Lilypad styles manage layout */
+  /* display: flex; */
+  /* height: 100vh; */
+/* } */
 
 /* Main Content Area */
-.content {
-  flex-grow: 1;
-  padding: 24px;
-  overflow-y: auto;
-}
+/* .content { */ /* Commented: Let Lilypad styles manage content padding and overflow */
+  /* flex-grow: 1; */
+  /* padding: 24px; */
+  /* overflow-y: auto; */
+/* } */
 
 /* Card Styles */
-.card {
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  margin-bottom: 24px;
-  padding: 16px;
-}
+/* .card { */ /* Commented: MUI Card or Lilypad styles should handle this */
+  /* border-radius: 8px; */
+  /* transition: all 0.3s ease; */
+  /* margin-bottom: 24px; */
+  /* padding: 16px; */
+/* } */
 
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
+/* .card:hover { */
+  /* box-shadow: 0 8px 16px rgba(0,0,0,0.1); */ /* Lilypad hover effects should apply */
+/* } */
 
 /* Dashboard Grid Layout */
-.dashboard-grid {
+.dashboard-grid { /* Kept for now, assuming it's a specific layout not covered by Lilypad global styles */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
@@ -52,15 +52,15 @@ body {
 }
 
 /* Chart Containers */
-.chart-container {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-  padding: 16px;
-  margin-bottom: 24px;
-}
+/* .chart-container { */ /* Commented: Let sections be styled by Lilypad's theme */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* min-height: 300px; */
+  /* padding: 16px; */
+  /* margin-bottom: 24px; */
+/* } */
 
-/* Status Indicators */
+/* Status Indicators */ /* Kept for now, colors might need adjustment later if they clash badly */
 .status-indicator {
   display: inline-block;
   width: 10px;
@@ -81,7 +81,8 @@ body {
   background-color: #f44336;
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar */ /* Commented out to prefer MainLayout.jsx scrollbar or Lilypad's default */
+/*
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -99,3 +100,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+*/
